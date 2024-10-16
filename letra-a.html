@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letra A</title>
+    <script>
+       function verificarLetraA(string) {
+    
+    const lowerCaseString = string.toLowerCase();
+    
+    
+    const count = (lowerCaseString.match(/a/g) || []).length;
+
+    if (count > 0) {
+        alert(`A letra 'a' aparece ${count} vez(es) na string.`)
+        console.log(`A letra 'a' aparece ${count} vez(es) na string.`);
+    } else {
+        alert("A letra 'a' não está presente na string.")
+        console.log("A letra 'a' não está presente na string.");
+    }
+}
+
+
+function main() {
+    const input = prompt("Digite uma string para verificar a letra 'a':");
+    
+    if (input !== null) {
+        verificarLetraA(input);
+    }
+}
+
+
+main();
+
+    </script>
+</head>
+<body>
+    <h1>Verificação de Fibonacci</h1>
+</body>
+</html>
